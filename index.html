@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<link rel="shortcut icon" href="http://findicons.com/files/icons/1799/bathroom/16/duck.png" type="image/ico" />
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+<html><title>páMATÉRIA</title><head>
+    <meta charset="UTF-8">    
+    </head><body><style>
+      
+#navbar { font: 900 11px open sans; letter-spacing: 1px; color: #fff; text-transform: uppercase; border-top: 4px solid #fff; padding-top: 10px; padding-bottom: 45px; width: 370px; margin-left: 200px; margin-top: -15px; }
+#navbar a { padding-right: 44px; cursor: pointer; }
+#carrossel { padding: 50px 20px; width: 1200px; }
+#carrossel img { margin: 0px 10px; }
+#carrossel a { cursor: pointer; color: white; font-size: 100px; margin-top: 10px; position: absolute; }
+#pa-home { background-color: #f3f9ff; margin: 15px; }
+#pa-home t { color: #fff; font: 100 130px Open Sans; }
+#pa-home a { text-decoration: none; }
+@keyframes cores {
+0%{ background-color: #f1e573; opacity: 0.3; }
+33%{ background-color: #5cd9ea; opacity: 0.3; } 
+66%{ background-color: #e85d5d; opacity: 0.3; }
+100%{ background-color: #f1e573; opacity: 0.3; } }
+
+
+.mat-capa { margin-bottom: 100px; background: #eee no-repeat top center; width: 100%; padding: 70px 0px; height: 460px; font: 400 13px lato; text-align: justify;  }
+.mat-capa p { margin-bottom: -12px; text-indent: 25px; line-height: 140%; }
+.mat-capa l { line-height: 140%; }
+.mat-quote { font: 700 italic 25px playfair display; text-align: left; line-height: 100%; padding: 30px 0px; color: #e85d5d; }
+
+
+#pa-home tit { font: italic bold 50px Playfair Display; text-align: center; display: block;  line-height: 100%; }
+#pa-home subt { font: 600 11px open sans; text-transform: uppercase; letter-spacing: 1.5px; }
+
+
+    .sp-slideshow { position: relative; margin: 0px auto; width: 1200px; height: 600px; }
+    .sp-content { background: #fff; position: relative; width: 100%;height: 100%;overflow: hidden;}
+    
+    .sp-parallax-bg {background: #f3f9ff; -webkit-background-size: cover;-moz-background-size: cover;background-size: cover;position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;}
+    
+    .sp-slideshow input {position: absolute;bottom: 15px;left: 50%;width: 9px;height: 9px;z-index: 1001;cursor: pointer;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);opacity: 0;}
+    
+    .sp-slideshow input + label {position: absolute;bottom: 15px;left: 50%;width: 6px;height: 6px;display: block;z-index: 1000;border: 3px solid #fff;border: 3px solid rgba(255,255,255,0.9);-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;-webkit-transition: background-color linear 0.1s;-moz-transition: background-color linear 0.1s;-o-transition: background-color linear 0.1s;-ms-transition: background-color linear 0.1s;transition: background-color linear 0.1s;}
+    .sp-slideshow input:checked + label {background-color: #fff; background-color: rgba(255,255,255,0.9);}
+    
+</style>
+<style>
+    .sp-selector-1, .button-label-1 {margin-left: -36px;}
+    .sp-selector-2, .button-label-2 {margin-left: -18px;}
+    .sp-selector-3, .button-label-3 {margin-left: 0px;}
+    .sp-selector-4, .button-label-4 {margin-left: 18px;}
+    .sp-selector-5, .button-label-5 {margin-left: 36px;}
+    
+    .sp-arrow {position: absolute;top: 50%;width: 28px;height: 37px;margin-top: -19px;display: none;cursor: pointer;z-index: 1000; background: center top transparent url(http://i.imgur.com/hEfN7rx.png) no-repeat;-webkit-transition: opacity linear 0.3s;-moz-transition: opacity linear 0.3s;-o-transition: opacity linear 0.3s;-ms-transition: opacity linear 0.3s;
+    transition: opacity linear 0.3s;}
+    .sp-arrow:hover{opacity: 1;}
+    .sp-arrow:active{margin-top: -18px;}
+    .sp-selector-1:checked ~ .sp-arrow.sp-a2,
+    .sp-selector-2:checked ~ .sp-arrow.sp-a3,
+    .sp-selector-3:checked ~ .sp-arrow.sp-a4,
+    .sp-selector-4:checked ~ .sp-arrow.sp-a5 {right: 15px;display: block;background-position: top right;}
+    .sp-selector-2:checked ~ .sp-arrow.sp-a1,
+    .sp-selector-3:checked ~ .sp-arrow.sp-a2,
+    .sp-selector-4:checked ~ .sp-arrow.sp-a3,
+    .sp-selector-5:checked ~ .sp-arrow.sp-a4 {left: 15px;display: block;background-position: top left;}
+    
+    
+    .sp-slideshow input:checked ~ .sp-content {-webkit-transition: background-position linear 0.6s, background-color linear 0.8s;-moz-transition: background-position linear 0.6s, background-color linear 0.8s;-o-transition: background-position linear 0.6s, background-color linear 0.8s;-ms-transition: background-position linear 0.6s, background-color linear 0.8s;transition: background-position linear 0.6s, background-color linear 0.8s;}
+    
+    .sp-slideshow input:checked ~ .sp-content .sp-parallax-bg {-webkit-transition: background-position linear 0.7s;-moz-transition: background-position linear 0.7s;-o-transition: background-position linear 0.7s;-ms-transition: background-position linear 0.7s;transition: background-position linear 0.7s;}
+    
+    input.sp-selector-1:checked ~ .sp-content {background-position: 0 0;background-color: #727b7f;} 
+    input.sp-selector-2:checked ~ .sp-content {background-position: -100px 0; background-color:#7f7276;} 
+    input.sp-selector-3:checked ~ .sp-content {background-position: -200px 0;background-color: #737f72;} 
+    input.sp-selector-4:checked ~ .sp-content {background-position: -300px 0;background-color: #79727f;} 
+    input.sp-selector-5:checked ~ .sp-content {background-position: -400px 0;background-color: #7d7f72;} 
+    
+    input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-3:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-4:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-5:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    
+    .sp-slider { position: relative;left: 0; width: 500%;height: 100%;list-style: none; margin: 0;padding: 0;-webkit-transition: left ease-in 0.8s; -moz-transition: left ease-in 0.8s; -o-transition: left ease-in 0.8s; -ms-transition: left ease-in 0.8s;transition: left ease-in 0.8s; }
+    
+    .sp-slider > li {
+    height:100%;
+    padding:0 60px;
+    width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    float:left;
+    text-align:center;
+    opacity:0.4; 
+    -webkit-transition:opacity ease-in 0.4s 0.8s;
+    -moz-transition:opacity ease-in 0.4s 0.8s;
+    -o-transition:opacity ease-in 0.4s 0.8s;
+    -ms-transition:opacity ease-in 0.4s 0.8s;
+    transition:opacity ease-in 0.4s 0.8s; } 
+    
+    .sp-slider > li img{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;display: block;margin: 0 auto;padding: 40px 0 50px 0;max-height: 100%;max-width: 100%;}
+    
+    
+    input.sp-selector-1:checked ~ .sp-content .sp-slider {left: 0;}
+    input.sp-selector-2:checked ~ .sp-content .sp-slider {left: -100%;}
+    input.sp-selector-3:checked ~ .sp-content .sp-slider {left: -200%;}
+    input.sp-selector-4:checked ~ .sp-content .sp-slider {left: -300%;}
+    input.sp-selector-5:checked ~ .sp-content .sp-slider {left: -400%;}
+    
+    
+    input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
+    input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),
+    input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
+    input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
+    input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){ opacity: 1; }
+    
+</style>
+<center>
+<div style="background-color: #fff; width: 100%; height: 20px; position: fixed; top: 0; z-index: 99999999;"></div>
+<div style="background-color: #fff; width: 100%; height: 20px; position: fixed; bottom: 0; z-index: 99999999;"></div>
+<div id="pa-home">
+
+      <div style="background: #f1e573; padding-top: 70px; padding-bottom: 50px;">
+      <a href="https://paideias.github.io/home/"><t>PÁ IDEIAS</t></a>
+            <div id="navbar"><a>comprar</a><a>edições</a><a>favoritos</a><a>contato</a></div>
+      <div id="carrossel">
+      <a style="margin-left: -80px;">❮</a>
+      
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        
+      <a style="margin-left: 25px;">❯</a>  
+      </div></div>
+
+  
+
+
+
+
+
+
+<div class="sp-slideshow">
+            
+   <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+   <label for="button-1" class="button-label-1"></label>
+    
+   <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+   <label for="button-2" class="button-label-2"></label>
+    
+    
+    
+   <label for="button-1" class="sp-arrow sp-a1"></label>
+   <label for="button-2" class="sp-arrow sp-a2"></label>
+
+    
+   <div class="sp-content">
+       <div class="sp-parallax-bg"></div>
+       <ul class="sp-slider clearfix">
+           <li>
+           
+           
+           
+           
+           <div class="mat-capa" style="background: #fff right center url(http://i.imgur.com/31fjQ7n.jpg) no-repeat;">
+<div style="padding: 55px 50px 0px 50px; height: 150px; width: 350px; text-align: center; color: black; float: left;">
+    <tit>Designer do Hotel Pantone vem ao Brasil e fala sobre uso de cores</tit><br><br><br><br><br>
+      <div style="width: 220px; text-align: justify;"><subt>Michel Penneman, designer do Hotel Pantone, veio ao Brasil para uma palestra e conversou com Vogue sobre o uso de cores em ambientes<br><br> <b>ANITA PORFIRIO</b></subt></div>
+    </div></div>
+           
+           
+           
+           
+  
+</li>
+<li>
+             
+             
+             
+             <div class="mat-capa" style="background: right #fff url(http://i.imgur.com/qsbZlCd.png);">
+  <div style="padding: 0px 20px 0px 60px; margin-top: -20px; width: 215px; float: left;">
+<p>Michel Penneman é designer de interiores, mas não vá imaginando tapeçarias e vasos da dinastia Ming: o belga é conhecido pelo seu estilo contemporâneo, fresh e minimalista.
+Tanto é que um de seus mais conhecidos trabalhos, o Pantone Hotel, em Bruxelas, é uma espécie de Meca dos designers e criativos em geral. Os 59 quartos, distribuídos em sete andares,
+são brancos com carpete cinza, bem clean, mas os detalhes do décor – como quadros, almofadas e colchas – trazem combinações de oito tons diferentes e permitem que os hóspedes sintam 
+<span style='letter-spacing: -.3px;'>influência das cores em seu estado de espírito. "Na minha experiência, vermelho e laranja significam poder e energia", conta Penneman, "mas para usar com parcimônia, mais em uma cozinha 
+ou uma sala de estar do que em um quarto de dormir (colocar atrás da cama, não na frente de seus olhos, é melhor). Em um banheiro ou dormitório, azul ou verde menos
+ saturados podem dar calma e serenidade".  Curiosamente,</span><p></div>
+
+<div style="padding-right: 20px; margin-top: -7px; width: 215px; float: left;">
+<l>segundo o designer, a combinação mais solicitada pelos hóspedes do hotel é a energizante laranja, vermelho e cinza. </l><p style="margin-top: 0px;">Penneman, que veio a São Paulo ministrar uma palestra na Belas Artes, com o tema <i>Interiores comerciais – hospitalidade</i>, 
+no dia 13.08, ainda acrescenta que o ambiente minimalista não é necessariamente frio ou sem expressão: "um espaço minimalista pode ser quente se você usar um colorwall quente, com uma iluminação aconchegante, cortinas agradáveis e carpete confortável", diz,
+"e. com certeza, uma bela pintura da cor ou obra de arte pode dar um ambiente mais convidativo". Por fim, o designer dá a letra para um ambiente profissional confortável, elegante e moderno: "Em primeiro lugar, pinte todas as paredes com um branco quente
+(na Europa, eu uso várias vezes a referência RAL 9010). Depois, se possível, um piso natural claro de carvalho com um verniz incolor, ou um <span style="letter-spacing: .6px;">tapete cinza (se você usar cadeiras</span></p>
+</div>
+<div style="padding: 20px 30px; margin-top: -20px; width: 200px; float: left;">
+<div class="mat-quote"><center> "Em um banheiro ou dormitório, azul ou verde menos saturados podem dar calma e serenidade" </center></div></div>
+<div style="padding-right: 60px; margin-top: -7px; width: 215px; float: right;">
+<l>com rodinhas), e um teto acústico branco puro. Depois, você pode escolher cadeiras vermelhas para dar dinamismo e uma mesa de carvalho natural (com estrutura de alumínio). Você pode com certeza fazer combinações, como uma parede com cor (a mesma cor que as cadeiras, por exemplo) ou algumas imagens coloridas. Cuidado com a temperatura da iluminação: não deve ser muito quente, para dar energia".</l></div>
+
+             
+             
+             
+           </li>
+       </ul>
+   </div>     
+</div>
+
+
+
+
+
+<div style="-webkit-animation: cores 10s linear infinite; padding: 10px; color: #fff; color: black; font: 700 9px open sans;">
+  SE PÁ CÊ VOLTA E A GENTE TROCA UMA IDEIA
+</div>
+
+
+		</div></center></body>
+	</html>
